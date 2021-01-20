@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+
+#wrapper{
+position:relative;
+width:100%;
+height:100%;
+margin:0;
+padding:0%;
+}
+
+#canvas{
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    border:0px solid black;
+    margin:0;
+    padding:0;
+    background-color:black;
+}
+
+.num{
+    position:absolute;
+    width:5em;
+    height:0em;
+    z-index:2;
+    text-align:center;
+    color:white;
+    font-size:100em;
+    margin:0 0 0 -0.6em;
+}
+.remaining{
+    position:absolute;
+    width:10em;
+    height:0em;
+    z-index:2;
+    text-align:center;
+    color:red;
+    font-size:5em;
+    margin:0 0 0 -0.6em;
+}
+
+#button{
+width:10em;
+height:2em;
+background-color:gray;
+color:white;
+z-index:4;
+}
+
+
+@keyframes fedeIn{
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+#anime1{
+    position:absolute;
+    width:10em;
+    height:0em;
+    z-index:2;
+    text-align:center;
+    color:white;
+    font-size:10em;
+    margin:0 0 0 0.2em;
+    animation-name:fedeIn;
+    animation-duration:5s;
+}
+
+#anime2{
+    position:absolute;
+    width:14em;
+    height:0em;
+    z-index:2;
+    text-align:center;
+    color:white;
+    font-size:10em;
+    margin:0 0 0 -1em;
+    animation-name:fedeIn;
+    animation-duration:5s;
+    top:2em;
+}
+#anime3{
+    position:absolute;
+    width:10em;
+    height:0em;
+    z-index:2;
+    text-align:center;
+    color:white;
+    font-size:10em;
+    margin:0 0 0 1em;
+    animation-name:fedeIn;
+    animation-duration:5s;
+    top:4em;
+}
